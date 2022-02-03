@@ -6,6 +6,16 @@
         西安邮电大学东区安悦公寓北楼
         <span class="iconfont position__notice">&#xe7c4;</span>
       </div>
+      <div class="search">
+        <span class="iconfont">&#xe6ac;</span>
+        <input class="search__text" placeholder="山姆商店优惠商品">
+      </div>
+      <div class="banner">
+        <img
+          class="banner__img"
+          src="http://www.dell-lee.com/imgs/vue3/banner.jpg"
+        />
+      </div>
     </div>
     <div class="docker">
       <div class="docker__item docker__item--active">
@@ -59,6 +69,34 @@
   }
   color: $content-fontcolor;
 }
+.search {
+  margin-bottom: .12rem;
+  line-height: .32rem;
+  background: #f5f5f5;
+  color: #b7b7b7;
+  border-radius: .16rem;
+  .iconfont{
+    display: inline-block;
+    padding: 0 .12rem 0 .16rem;
+    font-size: .16rem;
+  }
+  &__text {
+    display: inline-block;
+    width: 80%;
+    font-size: .14rem;
+    background-color:transparent;border:0;
+  }
+}
+
+.banner{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 25.4%;
+  &__img{
+    width: 100%;
+  }
+}
+
 .docker{
   display: flex;
   box-sizing: border-box;
@@ -85,7 +123,7 @@
     font-size: .2rem;
     transform: scale(.5,.5);
     transform-origin: center top;
-}
+  }
 }
 
 </style>
