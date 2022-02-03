@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="position">
         <span class="iconfont position__icon">&#xe7f1;</span>
-        西安邮电大学东区安悦公寓北楼西安邮电大学东区安悦公寓北楼
+        西安邮电大学东区安悦公寓北楼
         <span class="iconfont position__notice">&#xe7c4;</span>
       </div>
     </div>
@@ -29,6 +29,8 @@
 </template>
 
 <style lang="scss">
+@import './style/viriables.scss';
+@import './style/mixins.scss';
 .wrapper{
   position: absolute;
   top: 0;
@@ -43,8 +45,7 @@
   padding: .16rem .24rem .16rem 0;
   line-height: .22rem;
   font-size: .16rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  @include ellipsis;
   .position__icon{
     position: relative;
     top: .01rem;
@@ -56,6 +57,7 @@
     top: .17rem;
     font-size: .2rem;
   }
+  color: $content-fontcolor;
 }
 .docker{
   display: flex;
@@ -67,6 +69,7 @@
   width: 100%;
   height: .49rem;
   border-top: .01px solid #f1f1f1;
+  color: $content-fontcolor;
   &__item{
     flex:1;
     text-align: center;
