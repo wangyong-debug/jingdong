@@ -79,7 +79,66 @@
         </div>
       </div>
     <div class="gap"></div>
+    <div class="nearby">
+      <h3 class="nearby__title">附近店铺</h3>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png"
+        class="nearby__item__img"
+        >
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png"
+        class="nearby__item__img"
+        >
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png"
+        class="nearby__item__img"
+        >
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89减4元运费券（每月3张）</p>
+        </div>
+      </div>
+      <div class="nearby__item">
+        <img src="http://www.dell-lee.com/imgs/vue3/near.png"
+        class="nearby__item__img"
+        >
+        <div class="nearby__content">
+          <div class="nearby__content__title">沃尔玛</div>
+          <div class="nearby__content__tags">
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+            <span class="nearby__content__tag">月售1万+</span>
+          </div>
+          <p class="nearby__content__highlight">VIP尊享满89减4元运费券（每月3张）</p>
+        </div>
+      </div>
     </div>
+  </div>
     <div class="docker">
       <div class="docker__item docker__item--active">
         <div class="iconfont">&#xe6b8;</div>
@@ -105,12 +164,13 @@
 @import './style/viriables.scss';
 @import './style/mixins.scss';
 .wrapper{
+  overflow-y: auto;
   position: absolute;
   top: 0;
   left: 0;
   bottom:.5rem;
   right: 0;
-  padding: 0 .18rem;
+  padding: 0 .18rem .3rem .1rem;
 }
 .position{
   overflow: hidden;
@@ -182,7 +242,49 @@
   height: .1rem;
   background: $content-bgColor;
 }
-.docker{
+.nearby {
+  &__title {
+    margin: .16rem 0 .02rem 0;
+    font-size: .18rem;
+    font-weight: normal;
+    color: $content-fontcolor;
+  }
+  &__item {
+    display: flex;
+    padding-top: .12rem;
+    &__img {
+      margin-right: .16rem;
+      width: .56rem;
+      height: .56rem;
+    }
+  }
+  &__content {
+    flex: 1;
+    padding-bottom: .12rem;
+    border-bottom: .01rem solid $content-bgColor;
+    &__title {
+      line-height: .22rem;
+      font-size: .16rem;
+      color: $content-fontcolor;
+    }
+    &__tags {
+      margin-top: .08rem;
+      line-height: .18rem;
+      font-size: .13rem;
+      color: $content-fontcolor;
+    }
+    &__tag {
+      margin-right: .16rem;
+    }
+    &__highlight {
+      margin: .08rem;
+      line-height: .18rem 0 0 0;
+      font-size: .13rem;
+      color: #e93b3b;
+    }
+  }
+}
+.docker {
   display: flex;
   box-sizing: border-box;
   position: absolute;
@@ -210,5 +312,4 @@
     transform-origin: center top;
   }
 }
-
 </style>
