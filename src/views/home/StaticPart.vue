@@ -35,7 +35,7 @@ export default {
   setup () {
     const iconList = [{
       id: 1,
-      iconUrl: 'http://www.dell-lee.com/imgs/vue3/banner.jpg',
+      iconUrl: 'http://www.dell-lee.com/imgs/vue3/超市.png',
       icontext: '超市便利'
     }, {
       id: 2,
