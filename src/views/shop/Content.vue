@@ -35,6 +35,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../style/viriables';
+@import '../../style/mixins';
 .content {
   display: flex;
   position: absolute;
@@ -47,14 +49,14 @@ export default {
   overflow-y: scroll;
   height: 100%;
   width: .76rem;
-  background: #f5f5f5;
+  background: $search-bgColor;
   &__item {
     line-height: .4rem;
     text-align: center;
     font-size: .14rem;
-    color: #333;
+    color: $content-fontcolor;
     &--active {
-      background: #fff;
+      background: $bgColor;
     }
   }
 }
@@ -66,7 +68,10 @@ export default {
     display: flex;
     padding: .12rem 0;
     margin: 0 .16rem;
-    border-bottom: .01rem solid #f1f1f1;
+    border-bottom: .01rem solid $content-bgColor;
+    &__detail {
+      overflow: hidden;
+    }
     &__img {
       width: .68rem;
       height: .68rem;
@@ -76,19 +81,20 @@ export default {
       margin: 0;
       line-height: .2rem;
       font-size: .14rem;
-      color: #333;
+      color: $content-fontcolor;
+      @include ellipsis;
     }
     &__sales {
       margin: .06rem 0;
       line-height: .16rem;
       font-size: .12rem;
-      color: #333;
+      color: $content-fontcolor;
     }
     &__price {
       margin: 0;
       line-height: .2rem;
       font-size: .14rem;
-      color: #e93b3b;
+      color: $hightlight-fontColor;
     }
     &__yen {
       font-size: .12rem;
@@ -97,7 +103,7 @@ export default {
       margin-left: .06rem;
       line-height: .2rem;
       font-size: .12rem;
-      color: #999;
+      color: $light-fontColor;
       text-decoration: line-through;
     }
     .product__number {
@@ -114,13 +120,13 @@ export default {
         text-align: center;
       }
       &__minus {
-        border: .01rem solid #666;
-        color: #666;
+        border: .01rem solid $medium-fontColor;
+        color: $medium-fontColor;
         margin-right: .05rem;
       }
       &__plus {
-        background: #0091ff;
-        color: #fff;
+        background: $btn-bgColor;
+        color: $bgColor;
         margin-left: .05rem;
       }
     }

@@ -57,7 +57,7 @@ export default {
       margin: .08rem;
       line-height: .18rem 0 0 0;
       font-size: .13rem;
-      color: #e93b3b;
+      color: $hightlight-fontColor;
     }
   }
 }
